@@ -1,0 +1,165 @@
+<h1>{{project.nombre}}</h1>
+
+<h2>{{project.bio}}</h2>
+
+<div class="row">
+
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-left-primary shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-s font-weight-bold text-primary text-uppercase mb-3">
+                <div class="text-s font-weight-bold text-primary text-uppercase mb-1">{{project.indicador1}}</div>
+                <div class="h2 mb-0 font-weight-bold text-gray-800">{{project.rsp_indicador1}}</div>
+              </div>
+
+            </div>
+            <div class="col-auto">
+             
+              <i class="{{project.icono1 }} fa-4x text-gray-400"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-left-warning shadow h-100 py-2">
+        <div class="card-body">
+          <div class="row no-gutters align-items-center">
+            <div class="col mr-2">
+              <div class="text-s font-weight-bold text-warning text-uppercase mb-1">{{project.indicador2}}</div>
+              <div class="h2 mb-0 font-weight-bold text-gray-800">{{project.rsp_indicador2}}</div>
+            </div>
+            <div class="col-auto">
+              <i class="{{project.icono2 }} fa-4x text-gray-400"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-info shadow h-100 py-2">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                <div class="text-s font-weight-bold text-info text-uppercase mb-1">{{project.indicador3}}</div>
+                <div class="h2 mb-0 font-weight-bold text-gray-800">{{project.rsp_indicador3}}</div>
+              </div>
+              <div class="col-auto">
+                <i class="{{project.icono3 }} fa-4x text-gray-400"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    <!-- Earnings (Monthly) Card Example -->
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-success shadow h-100 py-2">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                <div class="text-s font-weight-bold text-success text-uppercase mb-1">{{project.indicador4}}</div>
+                <div class="h2 mb-0 font-weight-bold text-gray-800">{{project.rsp_indicador4}}</div>
+              </div>
+              <div class="col-auto">
+                <i class="{{project.icono4 }} fa-4x text-gray-400"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <!-- Tab panes -->
+                <div class="tab-content tabcontent-border">
+                    <div class="tab-pane active" id="home" role="tabpanel">
+                        <div class="p-20">
+                            <h3>🎯 Objetivos</h3>
+                            <div class="tab-content" [innerHTML]="project.objetivos"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <!-- Tab panes -->
+                <div class="tab-content tabcontent-border">
+                    <div class="tab-pane active" id="home" role="tabpanel">
+                        <div class="p-20">
+                            <h3>💻 Fuentes de información utilizadas</h3>
+                            <div class="tab-content" [innerHTML]="project.fuente"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div>
+
+
+
+
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body p-b-0">
+            <h4 class="card-title">📊 Indicadores Planteados</h4>
+        <!-- Nav tabs -->
+
+        <!-- Tab panes -->
+        <!-- <div class="tab-content">
+            {{project.indicadores}}
+        </div> -->
+
+        <div class="tab-content" [innerHTML]="project.indicadores"></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+
+
+
+    <div class="col-md-12">
+
+        <div class="card">
+            <div class="card-body p-b-0">
+                <h4 class="card-header">📊 Solución ofrecida {{getURl()}}</h4>
+            <!-- Nav tabs -->
+
+            <!-- Tab panes -->
+            <!-- <div class="tab-content">
+                {{project.indicadores}}
+            </div> -->
+            <!-- <iframe [src]="project.solucion" name="myIFrame" width="100%" height="100%" ></iframe>     -->
+          
+            <iframe width="100%" height="600" [src]="getURl()" frameborder="0" style="border:0" allowfullscreen></iframe>
+          
+          </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
