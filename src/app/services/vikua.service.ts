@@ -7,8 +7,8 @@ export class VikuaService{
     private projects: Project[] = [
         {
           nombre: "Barranquilla",
-          requerimiento: "Desarrollar una herramienta que permitiese hacer seguimiento del estado y desempeño de los distintos servicios públicos, así como de las distintas incidencias que estos pueden presentar, a nivel metropolitano, para así diagnosticar causas y realizar correctivos.",
-          img: "assets/images/barranquilla.png",
+          requerimiento: "Desarrollar una herramienta que permitiese hacer seguimiento del estado y desempeño de los distintos servicios públicos, así como de las distintas incidencias que estos pueden presentar, a nivel metropolitano.",
+          img: "assets/images/covidgdc.jpg",
           indicador1: "Dispositivo",
           rsp_indicador1:"URBO-220",
           indicador2: "Tiempo Medio de Respuesta",

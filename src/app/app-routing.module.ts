@@ -14,10 +14,10 @@ const routes: Routes = [
     path: '', 
     component: PagesComponent,
     children: [
-      { path: 'dashboard', component: DashboardComponent },
-      { path: 'progress', component: ProgressComponent },
-      { path: 'grafica1', component: Grafica1Component },
-      { path: 'project/:id', component: ProjectComponent },
+      { path: 'dashboard', component: DashboardComponent, data: {title: 'Catálogo de Productos'} },
+      { path: 'progress', component: ProgressComponent, data: {title: 'Progress'} },
+      { path: 'grafica1', component: Grafica1Component, data: {title: 'Grafica'} },
+      { path: 'project/:id', component: ProjectComponent, data: {title: 'Project'} },
       { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
     ]
   },
